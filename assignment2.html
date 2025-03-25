@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Studio Hub</title>
+</head>
+<body>
+    <!-- ========== Ordered List Section ========== -->
+    <section>
+        <h2>Top 5 Creative Tools</h2>
+        <ol type="I">
+            <li>Digital Sketchpad</li>
+            <li>3D Modeling Software</li>
+            <li>Vector Graphics Editor</li>
+            <li>Video Editing Suite</li>
+            <li>Code Development Environment</li>
+        </ol>
+    </section>
+
+    <!-- ========== External Image Section ========== -->
+    <section>
+        <h2>Creative Inspiration</h2>
+        <img src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg" 
+             alt="Abstract creative design elements" 
+             width="600"
+             style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1)">
+    </section>
+
+    <!-- ========== Contacts Table Section ========== -->
+    <section>
+        <h2>Creative Contacts</h2>
+        <table border="1" cellpadding="10" style="border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Wenzi Designer</td>
+                    <td>6 Hunter Close.</td>
+                    <td>0723580644</td>
+                    <td>wenzimolomo@studio.com</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ========== Registration Form Section ========== -->
+    <section>
+        <h2>Creative Membership</h2>
+        <form id="registrationForm" novalidate>
+            <!-- Text Inputs -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" 
+                   placeholder="Enter your full name" required
+                   pattern="[A-Za-z ]{3,}">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" 
+                   placeholder="your.email@example.com" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" 
+                   placeholder="Minimum 8 characters" required
+                   pattern="(?=.*\d)(?=.*[A-Z]).{8,}">
+            
+            <label for="birthdate">Birth Date:</label>
+            <input type="date" id="birthdate" name="birthdate" 
+                   required min="1900-01-01" max="2023-01-01">
+
+            <!-- Dropdown -->
+            <label for="role">Creative Role:</label>
+            <select id="role" name="role" required>
+                <option value="">Select your role</option>
+                <option value="designer">Designer</option>
+                <option value="developer">Developer</option>
+                <option value="artist">Artist</option>
+            </select>
+
+            <!-- Radio Buttons -->
+            <fieldset>
+                <legend>Preferred Medium:</legend>
+                <input type="radio" id="digital" name="medium" value="digital" required>
+                <label for="digital">Digital</label>
+                
+                <input type="radio" id="traditional" name="medium" value="traditional">
+                <label for="traditional">Traditional</label>
+            </fieldset>
+
+            <!-- Checkboxes -->
+            <fieldset>
+                <legend>Interests:</legend>
+                <input type="checkbox" id="web" name="interests" value="web">
+                <label for="web">Web Design</label>
+                
+                <input type="checkbox" id="graphic" name="interests" value="graphic">
+                <label for="graphic">Graphic Design</label>
+            </fieldset>
+
+            <button type="submit">Join Creative Community</button>
+        </form>
+    </section>
+
+    <!-- ========== Multimedia Section ========== -->
+    <section>
+        <h2>Creative Media</h2>
+        <audio controls>
+            <source src="https://samplelib.com/lib/preview/mp3/sample-3s.mp3" type="audio/mpeg">
+            Your browser does not support audio element.
+        </audio>
+
+        <video width="600" controls poster="https://samplelib.com/lib/preview/mp4/sample-5s.jpg">
+            <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+            Your browser does not support video tag.
+        </video>
+    </section>
+</body>
+</html>
